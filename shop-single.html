@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>eShop</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <a class=" navbar-brand" href="#">
+                <a class="ad-logoText" href="index.html">eShop </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-outline-warning ad-btnPadd" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Signup</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel text-center">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-auto my-1">
+                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Gender:</label>
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>Choose...</option>
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                        <option value="3">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-warning">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-lg-5 mt-5">
+                    <div class="card mb-3">
+                        <img class="card-img img-fluid" src="assets/img/product_single_10.jpg" alt="Card image cap"
+                            id="product-detail">
+                    </div>
+                    <div class="row">
+                        <!--Start Controls-->
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+                        <!--Start Carousel Wrapper-->
+                        <div id="multi-item" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+                            <!--Start Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/product_single_01.jpg"
+                                                    alt="Product Image 1">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/product_single_02.jpg"
+                                                    alt="Product Image 2">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/product_single_03.jpg"
+                                                    alt="Product Image 3">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.First slide-->
+
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/product_single_04.jpg"
+                                                    alt="Product Image 4">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/product_single_05.jpg"
+                                                    alt="Product Image 5">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/product_single_06.jpg"
+                                                    alt="Product Image 6">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Second slide-->
+
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/product_single_07.jpg"
+                                                    alt="Product Image 7">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/product_single_08.jpg"
+                                                    alt="Product Image 8">
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="card-img img-fluid" src="assets/img/product_single_09.jpg"
+                                                    alt="Product Image 9">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.Third slide-->
+                            </div>
+                            <!--End Slides-->
+                        </div>
+                        <!--End Carousel Wrapper-->
+                        <!--Start Controls-->
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon ad-nextIcon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+
+
+                            </a>
+                        </div>
+                        <!--End Controls-->
+                    </div>
+                </div>
+                <!-- col end -->
+                <div class="col-lg-7 mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="h2 ad-h1Carousel">Lorem Ipsum</h1>
+                            <p class="h3 py-2">$25.00</p>
+                            <p class="py-2">
+                                <span class="list-inline-item ad-shopInfoText">Rating 4.8 | 36 Comments</span>
+                            </p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Brand:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>Easy Wear</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p class="ad-shopInfoText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod temp
+                                incididunt
+                                ut
+                                labore et dolore magna aliqua. Quis ipsum suspendisse. Donec condimentum elementum
+                                convallis. Nunc sed orci a diam ultrices aliquet interdum quis nulla.</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Avaliable Color :</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong>White / Black</strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Specification:</h6>
+                            <ul class="list-unstyled pb-3">
+                                <li class="ad-shopInfoText">Lorem ipsum dolor sit</li>
+                                <li class="ad-shopInfoText">Amet, consectetur</li>
+                                <li class="ad-shopInfoText">Adipiscing elit,set</li>
+                                <li class="ad-shopInfoText">Duis aute irure</li>
+                                <li class="ad-shopInfoText">Ut enim ad minim</li>
+                                <li class="ad-shopInfoText">Dolore magna aliqua</li>
+                                <li class="ad-shopInfoText">Excepteur sint</li>
+                            </ul>
+
+                            <form action="" method="GET">
+                                <input type="hidden" name="product-title" value="Activewear">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item">Size :
+                                                <input type="hidden" name="product-size" id="product-size" value="S">
+                                            </li>
+                                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                <label class="btn btn-light">
+                                                    <input type="radio" name="options" id="option1" autocomplete="off"
+                                                        checked> S
+                                                </label>
+                                                <label class="btn btn-light">
+                                                    <input type="radio" name="options" id="option2" autocomplete="off">
+                                                    M
+                                                </label>
+                                                <label class="btn btn-light">
+                                                    <input type="radio" name="options" id="option3" autocomplete="off">
+                                                    L
+                                                </label>
+                                                <label class="btn btn-light">
+                                                    <input type="radio" name="options" id="option3" autocomplete="off">
+                                                    XL
+                                                </label>
+                                                <label class="btn btn-light">
+                                                    <input type="radio" name="options" id="option3" autocomplete="off">
+                                                    XXL
+                                                </label>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+                                            <li class="list-inline-item text-right">
+                                                Quantity
+                                                <input type="hidden" name="product-quanity" id="product-quanity"
+                                                    value="1">
+                                            </li>
+                                            <li class="list-inline-item"><span class="btn btn-light"
+                                                    id="btn-minus">-</span>
+                                            </li>
+                                            <li class="list-inline-item"><span class="badge bg-secondary"
+                                                    id="var-value">1</span></li>
+                                            <li class="list-inline-item"><span class="btn btn-light"
+                                                    id="btn-plus">+</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col d-grid">
+                                        <button type="button" class="btn ad-btnWidth btn-success btn-lg btn-block">Buy
+                                            now</button>
+                                    </div>
+                                    <div class="col d-grid">
+                                        <button type="button" class="btn ad-btnWidth btn-success btn-lg btn-block">Add
+                                            to
+                                            cart</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="ad-h1Carousel border-bottom pb-3 border-light logo">eShop</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            123 Kosovo Mitrovica 40000
+                        </li>
+                        <li>
+                            <a class="text-decoration-none ad-footerItem" href="tel:010-020-0340">000-000-0000</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none ad-footerItem"
+                                href="mailto:info@company.com">info@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none ad-footerItem" href="shop.html">Luxury</a></li>
+                        <li><a class="text-decoration-none ad-footerItem" href="shop.html">Sport Wear</a></li>
+                        <li><a class="text-decoration-none ad-footerItem" href="shop.html">Men's Shoes</a></li>
+                        <li><a class="text-decoration-none ad-footerItem" href="shop.html">Women's Shoes</a></li>
+                        <li><a class="text-decoration-none ad-footerItem" href="shop.html">Popular Dress</a></li>
+                        <li><a class="text-decoration-none ad-footerItem" href="shop.html">Accessories</a></li>
+                        <li><a class="text-decoration-none ad-footerItem" href="shop.html">Sport Shoes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none ad-footerItem" href="index.html">Home</a></li>
+                        <li><a class="text-decoration-none ad-footerItem" href="about.html">About Us</a></li>
+                        <li><a class="text-decoration-none ad-footerItem" href="shop.html">Shop</a></li>
+                        <li><a class="text-decoration-none ad-footerItem" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

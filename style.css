@@ -1,0 +1,129 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("assets/img/background-img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 23px;
+}
+
+.nav-link:hover {
+  color: #ffbe00!important;
+}
+
+.nav-item:hover{
+    display:inline-block;
+    border-bottom:2px solid #ffbe00;
+    padding-bottom:2px;
+}
+
+.ad-logoText {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffbe00 !important;
+    text-decoration: none;
+}
+
+.btn-warning {
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: transparent;
+    color: #ffbe00
+}
+
+.btn-outline-warning:hover{
+    color:white
+}
+
+.btn {
+    width: 80px;
+    height: 43px;
+    border-radius: 20px;
+}
+
+.ad-btnPadd {
+    margin-left: 30px;
+}
+
+.ad-h1Carousel {
+    color: #ffbe00 !important;
+    
+}
+
+.ad-h2Carousel {
+    color: white;
+}
+
+.ad-carouselText{
+    color: white;
+    font-weight: 900;
+}
+
+.ad-footerItem {
+    color: white;
+}
+
+.ad-footerItem:hover {
+    color: #ffbe00;
+}
+
+.text-muted{
+    color: red !important;
+}
+
+.ad-h5Carousel {
+    color: white !important;
+}
+
+.ad-contactItemCol{
+    font-weight: bold;
+    color: #ffbe00;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.ad-servicesText {
+    color: white;
+    font-weight:900;
+}
+
+.ad-servicesText:hover {
+    font-size: larger;
+    color: #ffbe00;
+}
+
+
+.ad-shopItem {
+    color: white;
+}
+
+.ad-shopItem:hover {
+    color: #ffbe00;
+}
+
+.ad-shopInfoText {
+    color: black;
+    font-weight: 50;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ad-btnWidth {
+    width: max-content;
+}
+
+.btn-success:hover {
+    background-color: transparent;
+    color: #007a2b;
+}
+
