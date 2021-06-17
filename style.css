@@ -133,3 +133,7 @@ body {
 .ad-buttonCenter {
     margin: auto;
 }
+
+.btn-group-toggle {
+    width: 100%;
+}
