@@ -18,12 +18,14 @@ body {
 
 .nav-link:hover {
   color: #ffbe00!important;
+  font-size: 25px !important;
 }
 
 .nav-item:hover{
     display:inline-block;
     border-bottom:2px solid #ffbe00;
-    padding-bottom:2px;
+    padding-bottom:1px;
+    
 }
 
 .ad-logoText {
@@ -31,6 +33,10 @@ body {
     font-weight: bold;
     color: #ffbe00 !important;
     text-decoration: none;
+}
+
+.ad-logoText:hover {
+    color: white !important;
 }
 
 .btn-warning {
